@@ -1,0 +1,15 @@
+[package]
+name = "getrandom-runtime-seeded"
+version = "0.1.0"
+authors = ["Luca Spinazzola"]
+edition = "2021"
+license-file = "LICENSE"
+repository = "https://github.com/luca992/getrandom-runtime-seeded"
+readme = "Readme.md"
+description = "A collection of standardized messages, state structs, and helper functions a contract can use to implement contract migration."
+keywords = ["cryptography", "random"]
+categories = ["cryptography"]
+
+[dependencies]
+getrandom = "0.2"
+rand_chacha = { version = "0.3.1", default-features = false }
