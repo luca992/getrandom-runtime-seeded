@@ -14,7 +14,7 @@ pub fn init_getrandom(rng_seed: [u8; 32]) {
     });
 }
 
-pub fn seeded_with_env_block_random(buf: &mut [u8]) -> Result<(), Error> {
+pub fn seeded_with_runtime_chacha_rng(buf: &mut [u8]) -> Result<(), Error> {
     CHACHA_RNG.with(|rng| {
         match rng.borrow_mut().as_mut() {
             Some(rng) => {
