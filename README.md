@@ -1,6 +1,6 @@
 # getrandom-runtime-seeded
 
-A custom getrandom implementation that uses a ChaChaRng instance set at runtime.
+A [custom getrandom](https://docs.rs/getrandom/latest/getrandom/macro.register_custom_getrandom.html) implementation that uses a `ChaChaRng` instance set at runtime.
 
 ### Setup
 
