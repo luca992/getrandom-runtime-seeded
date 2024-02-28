@@ -31,3 +31,6 @@ use getrandom_runtime_seeded::init_getrandom;
 // use a real seed here from a secure source (not a hardcoded one)
 init_getrandom([0u8; 32]);
 ```
+
+### Notes:
+* This implementation is designed for single threaded use cases as it sets `ChaChaRng` in a `thread_local` context.
