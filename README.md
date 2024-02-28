@@ -10,7 +10,7 @@ feature in
 
 ```toml
 [dependencies]
-getrandom-runtime-seeded = "0.1"
+getrandom-runtime-seeded = "1.0"
 getrandom = { version = "0.2", features = ["custom"] }
 ```
 
